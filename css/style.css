@@ -1,17 +1,28 @@
 *, body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Avenir-Medium; }
+
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
 
 .login-container {
   display: grid;
-  grid-template-columns: 800px 880px;
-  max-width: 1680px;
-  height: 900px;
+  grid-template-columns: 1fr 1.2fr;
+  max-width: 1920px;
+  height: 100%;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
   .login-container h2.logo {
     width: 167px;
     height: 51px;
@@ -30,21 +41,27 @@
     background: url(../images/forget-password-bg.svg); }
   .login-container .box-bg {
     padding: 48px 59px;
-    width: 800px;
-    height: 900px;
-    background-repeat: no-repeat; }
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; }
     .login-container .box-bg h2.title {
       font-size: 73px;
       line-height: 91px;
-      margin: 0 0 87px;
+      margin: 0 0 180px;
       font-family: Avenir-Bold;
       color: #ffffff; }
     .login-container .box-bg .box-content h2, .login-container .box-bg .box-content p {
       color: #fff; }
+    .login-container .box-bg .content-container {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 755px; }
   .login-container .login-form {
     padding: 48px 168px 48px 195px;
-    width: 880px;
-    height: 900px;
+    width: 100%;
+    height: 100%;
     background-color: white; }
     .login-container .login-form h2.logo a {
       background: url(../images/logo.svg) no-repeat; }
@@ -54,6 +71,8 @@
       top: 50%;
       transform: translate(0, -50%);
       width: 518px; }
+      .login-container .login-form .form-box .forget-lock-icon {
+        margin: 40px 0 70px; }
     .login-container .login-form .form-box.signup-form-box {
       padding-top: 50px; }
     .login-container .login-form .form-heading {
@@ -62,7 +81,8 @@
         margin: 0 0 4px;
         color: #3E434D;
         font-size: 30px;
-        line-height: 40px; }
+        line-height: 40px;
+        font-family: Avenir-Heavy; }
       .login-container .login-form .form-heading p {
         text-align: left;
         font-size: 16px;
@@ -132,5 +152,11 @@
 @font-face {
   font-family: Avenir-Regular;
   src: url(../fonts/AvenirNextLTPro-Regular.otf); }
+@font-face {
+  font-family: Avenir-Heavy;
+  src: url(../fonts/avenir-heavy.ttf); }
+@font-face {
+  font-family: Avenir-Medium;
+  src: url(../fonts/Avenir-Medium.ttf); }
 
 /*# sourceMappingURL=style.css.map */
