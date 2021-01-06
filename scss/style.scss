@@ -12,6 +12,18 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    h2.logo {
+        width: 167px;
+        height: 51px;
+        margin: 0 0 93px;
+        a {
+            width: 167px;
+            height: 51px;
+            display: block;
+            background: url(../images/bg-logo.svg) no-repeat;
+            text-indent: -9000px;
+        }
+    }
     .login-bg {
         background: url(../images/login-bg.svg);
     }
@@ -26,18 +38,7 @@
         width: 800px;
         height: 900px;
         background-repeat: no-repeat;
-        h1 {
-            width: 167px;
-            height: 51px;
-            margin: 0 0 93px;
-            a {
-                width: 167px;
-                height: 51px;
-                display: block;
-                background: url(../images/bg-logo.svg) no-repeat;
-                text-indent: -9000px;
-            }
-        }
+        
         h2.title {
             font-size: 73px;
             line-height: 91px;
@@ -45,11 +46,118 @@
             font-family: Avenir-Bold;
             color: #ffffff;
         }
+        .box-content {
+            h2, p {
+                color: #fff;
+            }
+        }
     }
     .login-form {
+        padding: 48px 168px 48px 195px;
         width: 880px;
         height: 900px;
         background-color: white;
+        h2.logo {
+            a {
+                background: url(../images/logo.svg) no-repeat;
+            }
+        }
+        .form-box {
+            padding-left: 12px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 518px;
+        }
+        .form-box.signup-form-box {
+            padding-top: 50px;
+        }
+        .form-heading {
+            margin: 0 0 37px;
+            h2 {
+                margin: 0 0 4px;
+                color: #3E434D;
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                text-align: left;
+                font-size: 16px;
+                line-height: 21px;
+                color: #6D6D6D;
+            }
+        }
+        .form-container {
+            margin: 0 0 28px;
+            label {
+                display: block;
+                color: #6D6D6D;
+                font-size: 16px;
+                line-height: 21px;
+                margin: 0 0 9px;
+            }
+            input {
+                width: 100%;
+                height: 40px;
+                border-radius: 4px;
+                border: 1px solid #BCBCBC;
+                padding: 0 10px;
+                outline: none;
+                &:active, &:focus {
+                    border: 1px solid #7D83FF;
+                    color: #3E434D;
+                }
+                &::placeholder {
+                    color: #BCBCBC;
+                }
+            }
+            input[type="checkbox"] {
+                width: 16px;
+                height: 16px;
+                border-radius: 1px;
+                border: 1px solid #BCBCBC;
+            }
+            button {
+                background-color: #7D83FF;
+                color: #fff;
+                font-size: 16px;
+                line-height: 21px;
+                width: 100%;
+                height: 40px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 4px;
+                &:hover {
+                    background-color: #7075e5;
+                }
+            }
+            .form-field {
+                margin: 0 0 18px;
+            }
+            .form-field.last-form-field {
+                margin: 0 0 40px;
+            }
+            .form-field.have-checkbox {
+                margin: 0 0 58px;
+                label {
+                    line-height: 16px;
+                    display: grid;
+                    grid-template-columns: 16px auto;
+                    grid-gap: 6px;
+                }
+            }
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            line-height: 21px;
+            color: #6D6D6D;
+            a {
+                text-decoration: none;
+                color: #7D83FF;
+            }
+        }
     }
 }
 
