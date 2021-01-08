@@ -25,26 +25,45 @@
     right: 0;
     top: 0;
     bottom: 0;
+    @media (min-width: 320px) and (max-width: 767px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.8fr;
+        position: relative;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1024px) and (max-width: 1650px) {
+        grid-template-columns: 1fr 1fr;
+    }
     h2.logo {
         width: 167px;
         height: 51px;
-        margin: 0 0 93px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            width: 140px;
+            height: 40px;
+        }
         a {
             width: 167px;
             height: 51px;
             display: block;
             background: url(../images/bg-logo.svg) no-repeat;
             text-indent: -9000px;
+            @media (min-width: 320px) and (max-width: 767px) {
+                width: 140px;
+                height: 40px;
+                background-size: cover !important;
+            }
         }
     }
     .login-bg {
-        background: url(../images/login-bg.svg);
+        background: url(../images/sign-up-bg.svg);
     }
     .signup-bg {
         background: url(../images/sign-up-bg.svg);
     }
     .forget-password-bg {
-        background: url(../images/forget-password-bg.svg);
+        background: url(../images/sign-up-bg.svg);
     }
     .box-bg {
         padding: 48px 59px;
@@ -52,24 +71,89 @@
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding: 20px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            padding: 30px;
+        }
+        @media (min-width: 1024px) and (max-width: 1280px) {
+            padding: 25px;
+        }
+        @media (min-width: 1281px) and (max-width: 1650px) {
+            padding: 50px;
+        }
         
         h2.title {
             font-size: 73px;
             line-height: 91px;
-            margin: 0 0 180px;
             font-family: Avenir-Bold;
             color: #ffffff;
+            position: relative;
+            top: 0;
+            @media (min-width: 320px) and (max-width: 767px) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                font-size: 34px;
+                line-height: 46px;
+            }
+            @media (min-width: 1024px) and (max-width: 1280px) {
+                font-size: 45px;
+                line-height: 55px;
+                margin: 0 0 55px;
+            }
+            @media (min-width: 1281px) and (max-width: 1650px) {
+                font-size: 48px;
+                line-height: 60px;
+            }
         }
         .box-content {
+            position: absolute;
+            bottom: 0;
             h2, p {
                 color: #fff;
+            }
+            h2 {
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 16px;
+                }
+            }
+            p {
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 14px;
+                }
             }
         }
         .content-container {
             position: absolute;
             top: 50%;
-            transform: translate(0, -50%);
-            width: 755px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 450px;
+            width: calc(100% - 118px);
+            @media (min-width: 320px) and (max-width: 767px) {
+                top: initial;
+                transform: initial;
+                left: initial;
+                bottom: 10px;
+                height: 195px;
+                width: calc(100% - 40px);
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                width: calc(100% - 60px);
+                height: 400px;
+            }
+            @media (min-width: 1024px) and (max-width: 1280px) {
+                width: calc(100% - 40px);
+                height: 350px;
+            }
+            @media (min-width: 1281px) and (max-width: 1650px) {
+                width: calc(100% - 100px);
+                height: 350px;
+            }
         }
     }
     .login-form {
@@ -77,7 +161,23 @@
         width: 100%;
         height: 100%;
         background-color: white;
+        position: relative;
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding: 10px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            padding: 30px;
+        }
+        @media (min-width: 1024px) and (max-width: 1280px) {
+            padding: 25px;
+        }
+        @media (min-width: 1281px) and (max-width: 1651px) {
+            padding: 50px;
+        }
         h2.logo {
+            @media (min-width: 320px) and (max-width: 767px) {
+                margin: 0 0 10px;
+            }
             a {
                 background: url(../images/logo.svg) no-repeat;
             }
@@ -88,6 +188,31 @@
             top: 50%;
             transform: translate(0, -50%);
             width: 518px;
+            @media (min-width: 320px) and (max-width: 767px) {
+                width: 100%;
+                padding-right: 12px;
+                position: relative;
+                margin: 0;
+                top: 0;
+                transform: initial;
+                margin: 0 0 10px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                padding-right: 12px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: calc(100% - 60px);
+            }
+            @media (min-width: 1024px) and (max-width: 1280px) {
+                padding-right: 12px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: calc(100% - 40px);
+            }
+            @media (min-width: 1281px) and (max-width: 1651px) {
+                width: calc(100% - 100px);
+                padding-right: 12px;
+            }
             .forget-lock-icon {
                 margin: 40px 0 70px;
             }
@@ -97,12 +222,19 @@
         }
         .form-heading {
             margin: 0 0 37px;
+            @media (min-width: 320px) and (max-width: 767px) {
+                margin: 0 0 30px;
+            }
             h2 {
                 margin: 0 0 4px;
                 color: #3E434D;
                 font-size: 30px;
                 line-height: 40px;
                 font-family: Avenir-Heavy;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 24px;
+                    line-height: 34px;
+                }
             }
             p {
                 text-align: left;
@@ -164,6 +296,9 @@
             }
             .form-field.have-checkbox {
                 margin: 0 0 58px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    margin: 0 0 18px;
+                }
                 label {
                     line-height: 16px;
                     display: grid;

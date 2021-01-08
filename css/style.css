@@ -2,20 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Avenir-Medium;
-}
+  font-family: Avenir-Medium; }
 
 .align-left {
-  text-align: left;
-}
+  text-align: left; }
 
 .align-center {
-  text-align: center;
-}
+  text-align: center; }
 
 .align-right {
-  text-align: right;
-}
+  text-align: right; }
 
 .forms-container {
   display: grid;
@@ -26,177 +22,273 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-}
-.forms-container h2.logo {
-  width: 167px;
-  height: 51px;
-  margin: 0 0 93px;
-}
-.forms-container h2.logo a {
-  width: 167px;
-  height: 51px;
-  display: block;
-  background: url(../images/bg-logo.svg) no-repeat;
-  text-indent: -9000px;
-}
-.forms-container .login-bg {
-  background: url(../images/login-bg.svg);
-}
-.forms-container .signup-bg {
-  background: url(../images/sign-up-bg.svg);
-}
-.forms-container .forget-password-bg {
-  background: url(../images/forget-password-bg.svg);
-}
-.forms-container .box-bg {
-  padding: 48px 59px;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.forms-container .box-bg h2.title {
-  font-size: 73px;
-  line-height: 91px;
-  margin: 0 0 180px;
-  font-family: Avenir-Bold;
-  color: #ffffff;
-}
-.forms-container .box-bg .box-content h2, .forms-container .box-bg .box-content p {
-  color: #fff;
-}
-.forms-container .box-bg .content-container {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 755px;
-}
-.forms-container .login-form {
-  padding: 48px 168px 48px 195px;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-.forms-container .login-form h2.logo a {
-  background: url(../images/logo.svg) no-repeat;
-}
-.forms-container .login-form .form-box {
-  padding-left: 12px;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 518px;
-}
-.forms-container .login-form .form-box .forget-lock-icon {
-  margin: 40px 0 70px;
-}
-.forms-container .login-form .form-box.signup-form-box {
-  padding-top: 50px;
-}
-.forms-container .login-form .form-heading {
-  margin: 0 0 37px;
-}
-.forms-container .login-form .form-heading h2 {
-  margin: 0 0 4px;
-  color: #3E434D;
-  font-size: 30px;
-  line-height: 40px;
-  font-family: Avenir-Heavy;
-}
-.forms-container .login-form .form-heading p {
-  text-align: left;
-  font-size: 16px;
-  line-height: 21px;
-  color: #6D6D6D;
-}
-.forms-container .login-form .form-container {
-  margin: 0 0 28px;
-}
-.forms-container .login-form .form-container label {
-  display: block;
-  color: #6D6D6D;
-  font-size: 16px;
-  line-height: 21px;
-  margin: 0 0 9px;
-}
-.forms-container .login-form .form-container input {
-  width: 100%;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid #BCBCBC;
-  padding: 0 10px;
-  outline: none;
-}
-.forms-container .login-form .form-container input:active, .forms-container .login-form .form-container input:focus {
-  border: 1px solid #7D83FF;
-  color: #3E434D;
-}
-.forms-container .login-form .form-container input::placeholder {
-  color: #BCBCBC;
-}
-.forms-container .login-form .form-container input[type=checkbox] {
-  width: 16px;
-  height: 16px;
-  border-radius: 1px;
-  border: 1px solid #BCBCBC;
-}
-.forms-container .login-form .form-container button {
-  background-color: #7D83FF;
-  color: #fff;
-  font-size: 16px;
-  line-height: 21px;
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-.forms-container .login-form .form-container button:hover {
-  background-color: #7075e5;
-}
-.forms-container .login-form .form-container .form-field {
-  margin: 0 0 18px;
-}
-.forms-container .login-form .form-container .form-field.last-form-field {
-  margin: 0 0 40px;
-}
-.forms-container .login-form .form-container .form-field.have-checkbox {
-  margin: 0 0 58px;
-}
-.forms-container .login-form .form-container .form-field.have-checkbox label {
-  line-height: 16px;
-  display: grid;
-  grid-template-columns: 16px auto;
-  grid-gap: 6px;
-}
-.forms-container .login-form p {
-  text-align: center;
-  font-size: 16px;
-  line-height: 21px;
-  color: #6D6D6D;
-}
-.forms-container .login-form p a {
-  text-decoration: none;
-  color: #7D83FF;
-}
+  bottom: 0; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .forms-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1.8fr;
+      position: relative; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .forms-container {
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1024px) and (max-width: 1650px) {
+    .forms-container {
+      grid-template-columns: 1fr 1fr; } }
+  .forms-container h2.logo {
+    width: 167px;
+    height: 51px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .forms-container h2.logo {
+        width: 140px;
+        height: 40px; } }
+    .forms-container h2.logo a {
+      width: 167px;
+      height: 51px;
+      display: block;
+      background: url(../images/bg-logo.svg) no-repeat;
+      text-indent: -9000px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .forms-container h2.logo a {
+          width: 140px;
+          height: 40px;
+          background-size: cover !important; } }
+  .forms-container .login-bg {
+    background: url(../images/sign-up-bg.svg); }
+  .forms-container .signup-bg {
+    background: url(../images/sign-up-bg.svg); }
+  .forms-container .forget-password-bg {
+    background: url(../images/sign-up-bg.svg); }
+  .forms-container .box-bg {
+    padding: 48px 59px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .forms-container .box-bg {
+        padding: 20px; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .forms-container .box-bg {
+        padding: 30px; } }
+    @media (min-width: 1024px) and (max-width: 1280px) {
+      .forms-container .box-bg {
+        padding: 25px; } }
+    @media (min-width: 1281px) and (max-width: 1650px) {
+      .forms-container .box-bg {
+        padding: 50px; } }
+    .forms-container .box-bg h2.title {
+      font-size: 73px;
+      line-height: 91px;
+      font-family: Avenir-Bold;
+      color: #ffffff;
+      position: relative;
+      top: 0; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .forms-container .box-bg h2.title {
+          font-size: 20px;
+          line-height: 28px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .forms-container .box-bg h2.title {
+          font-size: 34px;
+          line-height: 46px; } }
+      @media (min-width: 1024px) and (max-width: 1280px) {
+        .forms-container .box-bg h2.title {
+          font-size: 45px;
+          line-height: 55px;
+          margin: 0 0 55px; } }
+      @media (min-width: 1281px) and (max-width: 1650px) {
+        .forms-container .box-bg h2.title {
+          font-size: 48px;
+          line-height: 60px; } }
+    .forms-container .box-bg .box-content {
+      position: absolute;
+      bottom: 0; }
+      .forms-container .box-bg .box-content h2, .forms-container .box-bg .box-content p {
+        color: #fff; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .forms-container .box-bg .box-content h2 {
+          font-size: 16px; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .forms-container .box-bg .box-content p {
+          font-size: 14px; } }
+    .forms-container .box-bg .content-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 450px;
+      width: calc(100% - 118px); }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .forms-container .box-bg .content-container {
+          top: initial;
+          transform: initial;
+          left: initial;
+          bottom: 10px;
+          height: 195px;
+          width: calc(100% - 40px); } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .forms-container .box-bg .content-container {
+          width: calc(100% - 60px);
+          height: 400px; } }
+      @media (min-width: 1024px) and (max-width: 1280px) {
+        .forms-container .box-bg .content-container {
+          width: calc(100% - 40px);
+          height: 350px; } }
+      @media (min-width: 1281px) and (max-width: 1650px) {
+        .forms-container .box-bg .content-container {
+          width: calc(100% - 100px);
+          height: 350px; } }
+  .forms-container .login-form {
+    padding: 48px 168px 48px 195px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .forms-container .login-form {
+        padding: 10px; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .forms-container .login-form {
+        padding: 30px; } }
+    @media (min-width: 1024px) and (max-width: 1280px) {
+      .forms-container .login-form {
+        padding: 25px; } }
+    @media (min-width: 1281px) and (max-width: 1651px) {
+      .forms-container .login-form {
+        padding: 50px; } }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .forms-container .login-form h2.logo {
+        margin: 0 0 10px; } }
+    .forms-container .login-form h2.logo a {
+      background: url(../images/logo.svg) no-repeat; }
+    .forms-container .login-form .form-box {
+      padding-left: 12px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 518px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .forms-container .login-form .form-box {
+          width: 100%;
+          padding-right: 12px;
+          position: relative;
+          margin: 0;
+          top: 0;
+          transform: initial;
+          margin: 0 0 10px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .forms-container .login-form .form-box {
+          padding-right: 12px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: calc(100% - 60px); } }
+      @media (min-width: 1024px) and (max-width: 1280px) {
+        .forms-container .login-form .form-box {
+          padding-right: 12px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: calc(100% - 40px); } }
+      @media (min-width: 1281px) and (max-width: 1651px) {
+        .forms-container .login-form .form-box {
+          width: calc(100% - 100px);
+          padding-right: 12px; } }
+      .forms-container .login-form .form-box .forget-lock-icon {
+        margin: 40px 0 70px; }
+    .forms-container .login-form .form-box.signup-form-box {
+      padding-top: 50px; }
+    .forms-container .login-form .form-heading {
+      margin: 0 0 37px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        .forms-container .login-form .form-heading {
+          margin: 0 0 30px; } }
+      .forms-container .login-form .form-heading h2 {
+        margin: 0 0 4px;
+        color: #3E434D;
+        font-size: 30px;
+        line-height: 40px;
+        font-family: Avenir-Heavy; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .forms-container .login-form .form-heading h2 {
+            font-size: 24px;
+            line-height: 34px; } }
+      .forms-container .login-form .form-heading p {
+        text-align: left;
+        font-size: 16px;
+        line-height: 21px;
+        color: #6D6D6D; }
+    .forms-container .login-form .form-container {
+      margin: 0 0 28px; }
+      .forms-container .login-form .form-container label {
+        display: block;
+        color: #6D6D6D;
+        font-size: 16px;
+        line-height: 21px;
+        margin: 0 0 9px; }
+      .forms-container .login-form .form-container input {
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid #BCBCBC;
+        padding: 0 10px;
+        outline: none; }
+        .forms-container .login-form .form-container input:active, .forms-container .login-form .form-container input:focus {
+          border: 1px solid #7D83FF;
+          color: #3E434D; }
+        .forms-container .login-form .form-container input::placeholder {
+          color: #BCBCBC; }
+      .forms-container .login-form .form-container input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        border-radius: 1px;
+        border: 1px solid #BCBCBC; }
+      .forms-container .login-form .form-container button {
+        background-color: #7D83FF;
+        color: #fff;
+        font-size: 16px;
+        line-height: 21px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 4px; }
+        .forms-container .login-form .form-container button:hover {
+          background-color: #7075e5; }
+      .forms-container .login-form .form-container .form-field {
+        margin: 0 0 18px; }
+      .forms-container .login-form .form-container .form-field.last-form-field {
+        margin: 0 0 40px; }
+      .forms-container .login-form .form-container .form-field.have-checkbox {
+        margin: 0 0 58px; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .forms-container .login-form .form-container .form-field.have-checkbox {
+            margin: 0 0 18px; } }
+        .forms-container .login-form .form-container .form-field.have-checkbox label {
+          line-height: 16px;
+          display: grid;
+          grid-template-columns: 16px auto;
+          grid-gap: 6px; }
+    .forms-container .login-form p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 21px;
+      color: #6D6D6D; }
+      .forms-container .login-form p a {
+        text-decoration: none;
+        color: #7D83FF; }
 
 @font-face {
   font-family: Avenir-Bold;
-  src: url(../fonts/AvenirNextLTPro-Bold.otf);
-}
+  src: url(../fonts/AvenirNextLTPro-Bold.otf); }
 @font-face {
   font-family: Avenir-Regular;
-  src: url(../fonts/AvenirNextLTPro-Regular.otf);
-}
+  src: url(../fonts/AvenirNextLTPro-Regular.otf); }
 @font-face {
   font-family: Avenir-Heavy;
-  src: url(../fonts/avenir-heavy.ttf);
-}
+  src: url(../fonts/avenir-heavy.ttf); }
 @font-face {
   font-family: Avenir-Medium;
-  src: url(../fonts/Avenir-Medium.ttf);
-}
+  src: url(../fonts/Avenir-Medium.ttf); }
 
 /*# sourceMappingURL=style.css.map */
