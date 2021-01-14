@@ -59,6 +59,7 @@ h2.logo a {
 /* ====================== */
 .s-header {
   padding: 12px 0;
+  margin: 0 0 16px;
 }
 .s-header .s-header-content {
   display: grid;
@@ -83,6 +84,9 @@ h2.logo a {
   line-height: 21px;
   text-decoration: none;
 }
+.s-header .s-header-content .menu li a:hover {
+  color: #000000;
+}
 .s-header .s-header-content .menu li a span.user-img {
   position: absolute;
   left: 0;
@@ -91,6 +95,9 @@ h2.logo a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.s-header .s-header-content .menu li a.active {
+  color: #000000;
 }
 .s-header .s-header-content .menu li a.have-profile-img {
   padding-left: 40px;
@@ -116,6 +123,11 @@ h2.logo a {
 .main-container .inner-container {
   max-width: 1360px;
   margin: 0 auto;
+}
+.main-container .s-main-body-content {
+  display: grid;
+  grid-template-columns: 207px auto;
+  grid-gap: 60px;
 }
 
 .forms-container {
@@ -452,6 +464,30 @@ h2.logo a {
 .forms-container .login-form p a {
   text-decoration: none;
   color: #7D83FF;
+}
+
+.s-sidebar {
+  margin: 5px 0 0;
+}
+.s-sidebar ul {
+  padding-left: 20px;
+}
+.s-sidebar ul li {
+  margin: 0 0 10px;
+  list-style: none;
+}
+.s-sidebar ul li a {
+  position: relative;
+  color: #A7A7A7;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+.s-sidebar ul li a:hover {
+  color: #000000;
+}
+.s-sidebar ul li a.active {
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,4 +11,10 @@
         max-width: 1360px;
         margin: 0 auto;
     }
+
+    .s-main-body-content {
+        display: grid;
+        grid-template-columns: 207px auto;
+        grid-gap: 60px;
+    }
 }
