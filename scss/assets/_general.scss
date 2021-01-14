@@ -1,0 +1,47 @@
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+
+h2.logo {
+    width: 167px;
+    height: 51px;
+    @media (min-width: 320px) and (max-width: 767px) {
+        width: 140px;
+        height: 40px;
+    }
+    a {
+        width: 167px;
+        height: 51px;
+        display: block;
+        background: url(../images/bg-logo.svg) no-repeat;
+        text-indent: -9000px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            width: 140px;
+            height: 40px;
+            background-size: cover !important;
+        }
+    }
+}
+
+@font-face {
+    font-family: Avenir-Bold;
+    src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+    font-family: Avenir-Regular;
+    src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(../fonts/avenir-heavy.ttf);
+}
+@font-face {
+    font-family: Avenir-Medium;
+    src: url(../fonts/Avenir-Medium.ttf);
+}

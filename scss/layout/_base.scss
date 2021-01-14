@@ -1,0 +1,14 @@
+*, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Avenir-Medium;
+}
+.main-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    .inner-container {
+        max-width: 1360px;
+        margin: 0 auto;
+    }
+}

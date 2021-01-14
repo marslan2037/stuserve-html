@@ -1,0 +1,50 @@
+.s-header {
+    padding: 12px 0;
+    .s-header-content {
+        display: grid;
+        grid-template-columns: 207px 1fr 1fr;
+        grid-gap: 60px;
+        align-items: center;
+        h2.logo {
+            a {
+                background-image: url(../images/logo.svg);
+            }
+        }
+        .menu {
+            li {
+                display: inline-block;
+                margin-right: 47px;
+                &:last-child {
+                    margin: 0;
+                }
+                a {
+                    position: relative;
+                    color: #A7A7A7;
+                    font-size: 16px;
+                    line-height: 21px;
+                    text-decoration: none;
+                    span.user-img {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                }
+                a.have-profile-img {
+                    padding-left: 40px;
+                }
+            }
+        }
+        .menu.right-menu {
+            justify-self: end;
+            li {
+                a {
+                    color: #414042;
+                }
+            }
+        }
+    }
+}
