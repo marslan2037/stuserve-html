@@ -22,28 +22,65 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 17px;
+                margin: 0 0 28px;
+                .single-post.have-top-border {
+                    background-image: url(../images/single-post-border.svg);
+                }
                 .single-post {
                     padding: 25px 19px 21px;
                     box-shadow: 0px 0px 5px #999;
                     border-radius: 12px;
                     position: relative;
-                    .dots {
-                        position: absolute;
-                        right: 27px;
-                        top: 25px;
-                        cursor: pointer;
-                    }
-                    h2 {
-                        color: #000000;
-                        font-size: 20px;
-                        line-height: 27px;
+                    .heading {
                         margin: 0 0 15px;
+                        .dots {
+                            position: absolute;
+                            right: 27px;
+                            top: 25px;
+                            cursor: pointer;
+                        }
+                        h2 {
+                            color: #000000;
+                            font-size: 20px;
+                            line-height: 27px;
+                        }
+                        span.mini-detail {
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #8F8F8F;
+                            margin: 0 0 2px;
+                        }
+                    }
+                    .post-img {
+                        margin: 0 0 21px;
+                        img {
+                            width: 100%;
+                        }
                     }
                     p {
                         font-size: 16px;
                         line-height: 20px;
                         color: #393939;
                         margin: 0 0 20px;
+                    }
+                    .footer-icons-list {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        align-items: center;
+                        p {
+                            cursor: pointer;
+                            color: #5D5D5D;
+                            margin: 0;
+                        }
+                        p.have-grid {
+                            display: grid;
+                            grid-template-columns: 18px auto;
+                            align-items: center;
+                            grid-gap: 6px;
+                        }
+                        p.right-icon {
+                            justify-self: end;
+                        }
                     }
                     button {
                         color: #ffffff;
@@ -66,6 +103,55 @@
                         &:hover {
                             background-color: #b5b5b5;
                         }
+                    }
+                }
+            }
+
+            .user-profile-container {
+                max-width: 704px;
+                margin: 0 auto;
+                .profile-image {
+                    width: 152px;
+                    height: 152px;
+                    margin: 0 auto 26px;
+                    border-radius: 50%;
+                    border: 1px solid #7d83ff;
+                }
+                .single-field {
+                    margin: 0 0 44px;
+                    label {
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #6D6D6D;
+                        display: block;
+                        margin: 0 0 10px;
+                    }
+                    .field-icon {
+                        position: absolute;
+                        right: 40px;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                    }
+                    input {
+                        &:active, &:focus {
+                            box-shadow: inset 0 0 10px #A7A7A7;
+                        }
+                    }
+                    select {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                    }
+                    input, select {
+                        color: #6D6D6D;
+                        font-size: 16px;
+                        line-height: 21px;
+                        padding: 0 26px;
+                        background-color: #F9F9FC;
+                        height: 50px;
+                        border-radius: 4px;
+                        border: none;
+                        width: 100%;
+                        outline: none;
                     }
                 }
             }

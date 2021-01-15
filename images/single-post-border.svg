@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="476" height="209" viewBox="0 0 476 209">
+  <defs>
+    <filter id="Mask" x="-13.5" y="-9.5" width="503" height="236" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-opacity="0.192"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Mask)">
+        <rect id="Mask-2" data-name="Mask" width="476" height="209" rx="12.6" fill="#fff"/>
+      </g>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Mask-3" data-name="Mask" width="479.603" height="8.1" fill="#7d83ff"/>
+    </clipPath>
+  </defs>
+  <g id="Rectangle_Copy_2" data-name="Rectangle Copy 2" clip-path="url(#clip-path)">
+    <g id="Group_3" data-name="Group 3" transform="translate(-4)">
+      <rect id="Mask-4" data-name="Mask" width="479.603" height="8.1" fill="#7d83ff"/>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path-2)">
+        <g id="Group_3-3" data-name="Group 3" transform="translate(8.331 -5.4)">
+          <path id="Path_2" data-name="Path 2" d="M23.8,0,0,18" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_8" data-name="Path 2 Copy 8" d="M23.8,0,0,18" transform="translate(128.529)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_4" data-name="Path 2 Copy 4" d="M23.8,0,0,18" transform="translate(64.264)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_9" data-name="Path 2 Copy 9" d="M23.8,0,0,18" transform="translate(192.793)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_20" data-name="Path 2 Copy 20" d="M23.8,0,0,18" transform="translate(370.116)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_16" data-name="Path 2 Copy 16" d="M23.8,0,0,18" transform="translate(257.058)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_2" data-name="Path 2 Copy 2" d="M23.8,0,0,18" transform="translate(32.132)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_10" data-name="Path 2 Copy 10" d="M23.8,0,0,18" transform="translate(160.661)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_21" data-name="Path 2 Copy 21" d="M23.8,0,0,18" transform="translate(337.983)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_5" data-name="Path 2 Copy 5" d="M23.8,0,0,18" transform="translate(96.397)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_11" data-name="Path 2 Copy 11" d="M23.8,0,0,18" transform="translate(224.926)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_22" data-name="Path 2 Copy 22" d="M23.8,0,0,18" transform="translate(402.248)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_27" data-name="Path 2 Copy 27" d="M23.8,0,0,18" transform="translate(434.38)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_17" data-name="Path 2 Copy 17" d="M23.8,0,0,18" transform="translate(289.19)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy" data-name="Path 2 Copy" d="M23.8,0,0,18" transform="translate(15.471)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_12" data-name="Path 2 Copy 12" d="M23.8,0,0,18" transform="translate(144)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_23" data-name="Path 2 Copy 23" d="M23.8,0,0,18" transform="translate(321.322)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_6" data-name="Path 2 Copy 6" d="M23.8,0,0,18" transform="translate(79.736)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_13" data-name="Path 2 Copy 13" d="M23.8,0,0,18" transform="translate(208.264)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_24" data-name="Path 2 Copy 24" d="M23.8,0,0,18" transform="translate(385.587)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_18" data-name="Path 2 Copy 18" d="M23.8,0,0,18" transform="translate(272.529)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_3" data-name="Path 2 Copy 3" d="M23.8,0,0,18" transform="translate(47.603)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_14" data-name="Path 2 Copy 14" d="M23.8,0,0,18" transform="translate(176.132)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_25" data-name="Path 2 Copy 25" d="M23.8,0,0,18" transform="translate(353.455)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_7" data-name="Path 2 Copy 7" d="M23.8,0,0,18" transform="translate(111.868)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_15" data-name="Path 2 Copy 15" d="M23.8,0,0,18" transform="translate(240.397)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_26" data-name="Path 2 Copy 26" d="M23.8,0,0,18" transform="translate(417.719)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_28" data-name="Path 2 Copy 28" d="M23.8,0,0,18" transform="translate(449.851)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+          <path id="Path_2_Copy_19" data-name="Path 2 Copy 19" d="M23.8,0,0,18" transform="translate(304.661)" fill="none" stroke="#979797" stroke-miterlimit="10" stroke-width="5.4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
