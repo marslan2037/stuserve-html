@@ -471,6 +471,10 @@ h2.logo a {
 }
 .s-sidebar ul {
   padding-left: 20px;
+  margin: 0 0 28px;
+}
+.s-sidebar ul:last-child {
+  margin: 0;
 }
 .s-sidebar ul li {
   margin: 0 0 10px;

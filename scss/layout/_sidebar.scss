@@ -2,6 +2,10 @@
     margin: 5px 0 0;
     ul {
         padding-left: 20px;
+        margin: 0 0 28px;
+        &:last-child {
+            margin: 0;
+        }
         li {
             margin: 0 0 10px;
             list-style: none;
