@@ -253,10 +253,40 @@ h2.logo a {
   margin: 0 0 30px;
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list {
-  margin: 0 20px;
+  margin: 0 20px 33px;
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list p {
   margin: 0;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container {
+  margin-bottom: 18px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment {
+  display: grid;
+  grid-template-columns: 64px 218px;
+  grid-gap: 20px;
+  align-items: center;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container .user-img, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment .user-img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container .user-img img, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment .user-img img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container button, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment button {
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #707070;
+  width: 100%;
+  height: 38px;
+  color: #393939;
+  line-height: 22px;
+  font-size: 17px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container button:hover, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment button:hover {
+  background-color: #efefef;
 }
 .main-container .s-main-body-content .middle-body-content .user-profile-container {
   max-width: 704px;
