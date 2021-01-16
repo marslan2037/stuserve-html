@@ -43,12 +43,12 @@
                             color: #000000;
                             font-size: 20px;
                             line-height: 27px;
+                            margin: 0 0 2px;
                         }
                         span.mini-detail {
                             font-size: 14px;
                             line-height: 20px;
                             color: #8F8F8F;
-                            margin: 0 0 2px;
                         }
                     }
                     .post-img {
@@ -106,6 +106,43 @@
                     }
                 }
             }
+            .posts-list-container.single-post-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                .single-post {
+                    padding: 52px 46px;
+                    .heading {
+                        margin: 0 0 30px;
+                        h2 {
+                            font-size: 28px;
+                            line-height: 37px;
+                            margin: 0 0 4px;
+                        }
+                        .dots {
+                            right: 46px;
+                            top: 52px;
+                        }
+                        span.mini-detail {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin: 0 0 22px;
+                    }
+                    .post-img {
+                        margin: 0 0 30px;
+                    }
+                    .footer-icons-list {
+                        margin: 0 20px;
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
 
             .user-profile-container {
                 max-width: 704px;
@@ -116,6 +153,22 @@
                     margin: 0 auto 26px;
                     border-radius: 50%;
                     border: 1px solid #7d83ff;
+                    position: relative;
+                    .edit-icon {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: #7D83FF;
+                        color: #ffffff;
+                        display: grid;
+                        align-items: center;
+                        justify-items: center;
+                        font-size: 12px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 16px;
+                        cursor: pointer;
+                    }
                 }
                 .single-field {
                     margin: 0 0 44px;

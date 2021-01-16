@@ -161,12 +161,12 @@ h2.logo a {
   color: #000000;
   font-size: 20px;
   line-height: 27px;
+  margin: 0 0 2px;
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container .single-post .heading span.mini-detail {
   font-size: 14px;
   line-height: 20px;
   color: #8F8F8F;
-  margin: 0 0 2px;
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container .single-post .post-img {
   margin: 0 0 21px;
@@ -221,6 +221,43 @@ h2.logo a {
 .main-container .s-main-body-content .middle-body-content .posts-list-container .single-post button.following:hover {
   background-color: #b5b5b5;
 }
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post {
+  padding: 52px 46px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading {
+  margin: 0 0 30px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading h2 {
+  font-size: 28px;
+  line-height: 37px;
+  margin: 0 0 4px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading .dots {
+  right: 46px;
+  top: 52px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading span.mini-detail {
+  font-size: 18px;
+  line-height: 22px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post p {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 22px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .post-img {
+  margin: 0 0 30px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list {
+  margin: 0 20px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list p {
+  margin: 0;
+}
 .main-container .s-main-body-content .middle-body-content .user-profile-container {
   max-width: 704px;
   margin: 0 auto;
@@ -231,6 +268,22 @@ h2.logo a {
   margin: 0 auto 26px;
   border-radius: 50%;
   border: 1px solid #7d83ff;
+  position: relative;
+}
+.main-container .s-main-body-content .middle-body-content .user-profile-container .profile-image .edit-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #7D83FF;
+  color: #ffffff;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  cursor: pointer;
 }
 .main-container .s-main-body-content .middle-body-content .user-profile-container .single-field {
   margin: 0 0 44px;
