@@ -137,8 +137,13 @@
                     }
                     .footer-icons-list {
                         margin: 0 20px 33px;
+                        grid-gap: 60px;
+                        grid-template-columns: auto auto 1fr;
                         p {
                             margin: 0;
+                            display: grid;
+                            grid-gap: 32px;
+                            grid-template-columns: auto auto;
                         }
                     }
                     .comments-container {
@@ -170,6 +175,18 @@
                                 color: #393939;
                                 line-height: 22px;
                                 font-size: 17px;
+                            }
+                        }
+                        .single-comment {
+                            .comment-detail {
+                                h2 {
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    line-height: 22px;
+                                }
+                                p {
+                                    margin: 0;
+                                }
                             }
                         }
                         

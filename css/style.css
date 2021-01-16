@@ -17,6 +17,10 @@
   position: relative;
 }
 
+.no-shadow {
+  box-shadow: none !important;
+}
+
 h2.logo {
   width: 167px;
   height: 51px;
@@ -254,9 +258,14 @@ h2.logo a {
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list {
   margin: 0 20px 33px;
+  grid-gap: 60px;
+  grid-template-columns: auto auto 1fr;
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list p {
   margin: 0;
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: auto auto;
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container {
   margin-bottom: 18px;
@@ -287,6 +296,14 @@ h2.logo a {
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container button:hover, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment button:hover {
   background-color: #efefef;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment .comment-detail h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment .comment-detail p {
+  margin: 0;
 }
 .main-container .s-main-body-content .middle-body-content .user-profile-container {
   max-width: 704px;
