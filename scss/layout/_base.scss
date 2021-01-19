@@ -7,6 +7,12 @@
 .main-container {
     max-width: 1920px;
     margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 767px) {
+        padding: 0 20px;
+    }
+    @media (min-width: 768px) and (max-width: 1380px) {
+        padding:0 30px 0 15px;
+    }
     .inner-container {
         max-width: 1360px;
         margin: 0 auto;
@@ -16,6 +22,13 @@
         display: grid;
         grid-template-columns: 207px auto;
         grid-gap: 60px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 768px) and (max-width: 1023px){
+            grid-template-columns: 160px auto;
+            grid-gap: 40px;                   
+        }
 
         .middle-body-content {
             .posts-list-container {
@@ -23,6 +36,12 @@
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 17px;
                 margin: 0 0 28px;
+                @media (min-width: 320px) and (max-width: 479px) {
+                    grid-template-columns: 1fr;
+                }
+                @media (min-width: 480px) and (max-width: 767px) {
+                    grid-template-columns: 1fr 1fr;
+                }
                 .single-post.have-top-border {
                     background-image: url(../images/single-post-border.svg);
                 }
@@ -30,20 +49,38 @@
                     padding: 25px 19px 21px;
                     box-shadow: 0px 0px 5px #999;
                     border-radius: 12px;
-                    position: relative;
+                    @media (min-width: 768px) and (max-width: 1023px){
+                        padding: 15px 20px;                   
+                    }
                     .heading {
                         margin: 0 0 15px;
+                        position: relative;
+                        padding-right: 25px;
                         .dots {
                             position: absolute;
-                            right: 27px;
-                            top: 25px;
+                            right: 0px;
+                            top: 50%;
+                            transform: translate(0px , -50%);
                             cursor: pointer;
+                            width: 22px;
+                            height: 5px;
+                            img {
+                                position: absolute;
+                                right: 0px;
+                                top: 50%;
+                                transform: translate(0px , -50%);
+                            }
                         }
                         h2 {
                             color: #000000;
                             font-size: 20px;
                             line-height: 27px;
                             margin: 0 0 2px;
+                            
+                            @media (min-width: 480px) and (max-width: 1023px){
+                                font-size: 15px;
+                                line-height: 20px;                   
+                            }
                         }
                         span.mini-detail {
                             font-size: 14px;
@@ -62,6 +99,9 @@
                         line-height: 20px;
                         color: #393939;
                         margin: 0 0 20px;
+                        @media (min-width: 480px) and (max-width: 1023px){
+                            font-size: 14px;                   
+                        }
                     }
                     .footer-icons-list {
                         display: grid;

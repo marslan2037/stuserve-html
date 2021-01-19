@@ -1,20 +1,52 @@
 .s-header {
     padding: 12px 0;
     margin: 0 0 16px;
+    
+    @media (min-width: 320px) and (max-width: 767px) {
+        
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        
+    }
+    
+    @media (min-width: 1024px) and (max-width: 1280px) {
+
+    }
+
     .s-header-content {
         display: grid;
         grid-template-columns: 207px 1fr 1fr;
         grid-gap: 60px;
         align-items: center;
+        @media (min-width: 768px) and (max-width: 1023px) {
+            grid-template-columns: 160px 1fr 1fr;
+            grid-gap: 25px;
+        }
         h2.logo {
+            @media (min-width: 768px) and (max-width: 1023px){
+                width: 140px;
+                height: 45px;
+            }
             a {
                 background-image: url(../images/logo.svg);
+                @media (min-width: 768px) and (max-width: 1023px){
+                    width: 140px;
+                    height: 45px;
+                    background-size: cover;
+                }
             }
         }
         .menu {
+            @media (min-width: 320px) and (max-width: 767px) {
+                display:none;
+            }
             li {
                 display: inline-block;
                 margin-right: 47px;
+                @media (min-width: 768px) and (max-width: 1023px){
+                    margin-right:25px;
+                }
                 &:last-child {
                     margin: 0;
                 }
@@ -24,6 +56,9 @@
                     font-size: 16px;
                     line-height: 21px;
                     text-decoration: none; 
+                    @media (min-width: 768px) and (max-width: 1023px){
+                        font-size: 14px;
+                    }
                     &:hover {
                         color: #000000;
                     }  
