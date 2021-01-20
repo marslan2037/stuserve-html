@@ -69,11 +69,27 @@ h2.logo a {
   padding: 12px 0;
   margin: 0 0 16px;
 }
+.s-header .mobile-menu-button {
+  display: none;
+  justify-self: end;
+  font-size: 18px;
+  color: #414042;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .s-header .mobile-menu-button {
+    display: initial;
+  }
+}
 .s-header .s-header-content {
   display: grid;
   grid-template-columns: 207px 1fr 1fr;
   grid-gap: 60px;
   align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .s-header .s-header-content {
+    grid-template-columns: 140px 1fr;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .s-header .s-header-content {
@@ -100,11 +116,27 @@ h2.logo a {
 @media (min-width: 320px) and (max-width: 767px) {
   .s-header .s-header-content .menu {
     display: none;
+    position: absolute;
+    width: 150px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    right: 20px;
+    top: 40px;
+    padding: 5px 0;
+    z-index: 1;
+    box-shadow: 1px 1px 5px #ccc;
   }
 }
 .s-header .s-header-content .menu li {
   display: inline-block;
   margin-right: 47px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .s-header .s-header-content .menu li {
+    display: block;
+    margin: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .s-header .s-header-content .menu li {
@@ -120,6 +152,12 @@ h2.logo a {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .s-header .s-header-content .menu li a {
+    display: block;
+    padding: 8px 10px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .s-header .s-header-content .menu li a {
@@ -146,6 +184,11 @@ h2.logo a {
 }
 .s-header .s-header-content .menu.right-menu {
   justify-self: end;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .s-header .s-header-content .menu.right-menu {
+    display: none;
+  }
 }
 .s-header .s-header-content .menu.right-menu li a {
   color: #414042;
@@ -184,12 +227,13 @@ h2.logo a {
 @media (min-width: 320px) and (max-width: 767px) {
   .main-container .s-main-body-content {
     grid-template-columns: 1fr;
+    grid-gap: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-container .s-main-body-content {
     grid-template-columns: 160px auto;
-    grid-gap: 40px;
+    grid-gap: 25px;
   }
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container {
@@ -323,6 +367,16 @@ h2.logo a {
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post {
   padding: 52px 46px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post {
+    padding: 25px;
+  }
+}
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading {
   margin: 0 0 30px;
 }
@@ -331,32 +385,76 @@ h2.logo a {
   line-height: 37px;
   margin: 0 0 4px;
 }
-.main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading .dots {
-  right: 46px;
-  top: 52px;
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading span.mini-detail {
   font-size: 18px;
   line-height: 22px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading span.mini-detail {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .heading span.mini-detail {
+    font-size: 16px;
+  }
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post p {
   font-size: 18px;
   line-height: 22px;
   margin: 0 0 22px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post p {
+    font-size: 16px;
+  }
+}
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .post-img {
   margin: 0 0 30px;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .post-img {
+    margin: 0 0 15px;
+  }
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list {
   margin: 0 20px 33px;
   grid-gap: 60px;
   grid-template-columns: auto auto 1fr;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list {
+    margin: 0 0px 33px;
+    grid-gap: 25px;
+  }
+}
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list p {
   margin: 0;
   display: grid;
   grid-gap: 32px;
   grid-template-columns: auto auto;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .footer-icons-list p {
+    grid-gap: 10px;
+  }
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container {
   margin-bottom: 18px;
@@ -366,6 +464,11 @@ h2.logo a {
   grid-template-columns: 64px 218px;
   grid-gap: 20px;
   align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment {
+    grid-template-columns: 45px 155px;
+  }
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container .user-img, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment .user-img {
   display: inline-block;
@@ -387,6 +490,13 @@ h2.logo a {
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container button:hover, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment button:hover {
   background-color: #efefef;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .new-comment-container button, .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment button {
+    border-radius: 6px;
+    height: 34px;
+    font-size: 15px;
+  }
 }
 .main-container .s-main-body-content .middle-body-content .posts-list-container.single-post-container .single-post .comments-container .single-comment .comment-detail h2 {
   font-size: 18px;
@@ -433,11 +543,21 @@ h2.logo a {
   display: block;
   margin: 0 0 10px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .user-profile-container .single-field label {
+    font-size: 16px;
+  }
+}
 .main-container .s-main-body-content .middle-body-content .user-profile-container .single-field .field-icon {
   position: absolute;
   right: 40px;
   top: 50%;
   transform: translate(0, -50%);
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .user-profile-container .single-field .field-icon {
+    right: 18px;
+  }
 }
 .main-container .s-main-body-content .middle-body-content .user-profile-container .single-field input:active, .main-container .s-main-body-content .middle-body-content .user-profile-container .single-field input:focus {
   box-shadow: inset 0 0 10px #A7A7A7;
@@ -457,6 +577,11 @@ h2.logo a {
   border: none;
   width: 100%;
   outline: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container .s-main-body-content .middle-body-content .user-profile-container .single-field input, .main-container .s-main-body-content .middle-body-content .user-profile-container .single-field select {
+    padding: 0 12px;
+  }
 }
 
 .forms-container {
@@ -798,7 +923,7 @@ h2.logo a {
 .s-sidebar {
   margin: 5px 0 0;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .s-sidebar {
     display: none;
   }
@@ -806,11 +931,6 @@ h2.logo a {
 .s-sidebar ul {
   padding-left: 20px;
   margin: 0 0 28px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .s-sidebar ul {
-    display: none;
-  }
 }
 .s-sidebar ul:last-child {
   margin: 0;

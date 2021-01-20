@@ -1,21 +1,11 @@
 .s-sidebar {
     margin: 5px 0 0;
-    @media (min-width: 320px) and (max-width: 767px) {
-
-    }
-
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media(min-width: 320px) and (max-width: 767px) {
         display: none;
-    }
-    @media (min-width: 1024px) and (max-width: 1280px) {
-        
     }
     ul {
         padding-left: 20px;
         margin: 0 0 28px;
-        @media(min-width: 320px) and (max-width:767px){
-            display:none;
-        }
         &:last-child {
             margin: 0;  
         }
